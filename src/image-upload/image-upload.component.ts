@@ -144,6 +144,8 @@ export class ImageUploadComponent implements OnInit, OnChanges {
   }
 
   private async uploadFiles(files: FileList, filesToUploadNum: number) {
+    console.log('filesToUploadNum', filesToUploadNum)
+    console.log('this.fileCounter', this.fileCounter)
     for (let i = 0; i < filesToUploadNum; i++) {
       const file = files[i];
 
